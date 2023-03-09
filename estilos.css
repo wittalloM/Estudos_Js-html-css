@@ -86,23 +86,25 @@ body {
 #mesniveruser {
     margin-bottom: 2rem;
     min-height: 20px;
-    background-color:rgb(34, 69, 85);
+    background-color:rgb(251, 254, 255);
     border-radius: 18px;
-    color: aliceblue;
+    color: rgb(10, 10, 10);
 
 }
 
 #submit {
     padding: 0.8rem;
-    background-color: #2b2a2a;
-    border-radius: 12px;
+    background-color: #131718;
+    border-radius: 14px;
     max-width: 90px;
     margin-bottom: 1.5rem;
+    color:   #ffffff;
 }
 
 #submit:hover {
-  background-color: rgb(34, 69, 85);
+  background-color: rgb(255, 255, 255);
   transition: 0.8s;
+  color:rgb(10, 10, 10)
 }
 
 #teste_1 {
@@ -110,8 +112,8 @@ body {
     margin-top: 1rem;
     margin-bottom: 2.5rem;
     padding: 5px;
-    background-color: #1b1b1b;
-    color:aliceblue;
+    background-color: #ffffff;
+    color: #101010;
 }
 
 .titulo {
@@ -133,9 +135,9 @@ body {
 
 
 .calc input {
-    background-color: #2b2a2a;
+    background-color: #ffffff;
     border-radius: 16px;
-    color: aliceblue;
+    color: #101010;
     margin-top: 1.8rem;
 
 }
@@ -143,15 +145,16 @@ body {
 #Soma {
     font-size: 0.8rem;
     padding: 1rem;
-    background-color: #2b2a2a;
+    background-color: #131718;
     border-radius: 12px;
-    color: aliceblue;
+    color: #ffffff;
     margin-top: 1.8rem;
 
 }
 
 #Soma:hover {
-    background-color: rgb(34, 69, 85);
+    background-color: #ffffff;
     transition: 0.4s;
+    color: #101010;
 
 }
