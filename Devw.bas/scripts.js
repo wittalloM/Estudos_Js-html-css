@@ -2,8 +2,6 @@
 /**Páginas de scripts - Prof : Guanabara - cursoemvídeo */
 
 
-//const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"]
-//for (i = 0; i < meses.length; i++);
 
 const btn = document.querySelector('#submit');
 
@@ -17,20 +15,18 @@ btn.addEventListener("click", function (e) {
 
     /*Manipulando Eventos no JavaScript*/ 
 
-var mod = window.document.querySelector('#teste_1')
+var mod = window.document.getElementById('#sec_2')
 mod.addEventListener('click', clique)
-mod.addEventListener('mouseout', entrando)
+
 
 function clique() {
+   
     window.alert('Teste 1... concluído !');
-    mod.style.border = 'yellow'
-};
-function entrando() {
-    mod.innerText = 'Teste 2... concluído !'
-}
+    }
+    
 
 
-//const btn2 = document.querySelector("calc")
+//  Função simples Exerc -1;
 function somar() {
     let nbr = document.getElementById("vlr1")
     let nbr2 = document.getElementById("vlr2") 
@@ -38,5 +34,19 @@ function somar() {
     let n1 = Number(nbr.value)
     let n2 = Number(nbr2.value)
     let r = n1 + n2 
-    res.innerHTML = `A soma entre os valores ${nbr.value} e ${nbr2.value} é: ${r}`
+    res.innerHTML = `A soma entre os valores <strong>${nbr.value} e ${nbr2.value} é: ${r}</strong>`
+}
+
+
+
+function f_tst_nac() {
+     var nac_do_us = document.getElementById("nac_user")
+     var nac = nac_do_us.value 
+     var resp_tst = 'Brasil'
+     if ( nac  =! resp_tst) {
+        window.alert('No eres Brazuca manito, :( !')
+        console.log("País de origem do usuário: " + nac)
+     } else {
+        window.alert('Eres Brazuca manito, muchos saludos !')
+     }
 }
