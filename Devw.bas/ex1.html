@@ -14,93 +14,96 @@
 
 </head>
 
-<body>
+<!- Esta página de testes acompanha exercícios separados em "sections" , cada section se refere a um exercício de
+    Javascript aprendido; ->
+
+    <body>
 
 
 
-    <section id="sec_1">
-        <header>
-            <div class="sec1-cab">
-                <h1>Meus primeiros passos no Js</h1>
+        <section id="sec_1">
+            <header>
+                <div class="sec1-cab">
+                    <h1>Meus primeiros passos no Js</h1>
+                </div>
+
+            </header>
+            <br>
+
+            <div class="tit-item-bar">
+                <h2>Exercícios JS.</h2>
             </div>
-            </div>
 
-        </header>
-        <br>
+            <section id="sec1-item-bar">
+                <div class="item">
+                    <h3>Ex.aprendidos</h3>
+                    <p><strong> 5 / 10 </strong></p>
+                </div>
+                <div class="item">
+                    <h3>Aulas vistas</h3>
+                    <p>12 Aulas</p>
+                </div>
+                <div class="item">
+                    <h3>Aproveitamento</h3>
+                    <p><strong> 25% </strong></p>
+                </div>
+            </section>
 
-        <div class="tit-item-bar">
-            <h2>Exercícios JS.</h2>
-        </div>
+            <section id="sec_2">
+                <div class="sec2-form-box">
+                    <form class="form-user">
+                        <h3> #1 - Vamos ver se já sabemos trabalhar com arrays?</h3>
+                        <p>Famoso Script com Guimic;</p>
+                        <p>Nesse exercício, usando as estruturas de arrays, criaremos
+                            uma lista com todos os meses do ano e através dessa lista
+                            e do feedback do usuário, exibiremos uma mensagem com
+                            nome do mês em questão;
+                        </p>
+                        <input type="text" id="mesniveruser" placeholder="Digite o seu mês de aniversário">
+                        <input type="button" id="botao_sec2" value="Enviar" onclick="scrguimic()">
+                    </form>
+                </div>
+                </sectiopn>
 
-        <section id="item-bar">
-            <div class="item">
-                <h3>Ex.aprendidos</h3>
-                <p><strong> 5 / 10 </strong></p>
-            </div>
-            <div class="item">
-                <h3>Aulas vistas</h3>
-                <p>12 Aulas</p>
-            </div>
-            <div class="item">
-                <h3>Aproveitamento</h3>
-                <p><strong> 25% </strong></p>
-            </div>
-        </section>
+                <section id="sec_3">
+                    <div id="teste-1" onclick="clique()" onmouseenter="entrando()">
+                        <h1>Eventos Dom</h1>
+                        <h2><strtong>Interaja/Clique</strtong></h2>
+                    </div>
+                </section>
+                <section id="sec_4">
+                    <div class="calc">
+                        <h1 class="titulo_calc">Interação com o DOM</h1>
+                        <input type="number" name="vlrus1" id="vlr1" placeholder="Digite o 1° número"> +
+                        <input type="number" name="vlrus2" id="vlr2" placeholder="Digite o 2° número">
+                        <input type="button" id="botao_sec3" value="Resultado" onclick="somar()">
+                    </div>
+                    <div id="res">
 
-        <sectiopn id="sec_1">
-            <div class="cxintusu">
-                <form class="form_user">
-                    <h3> #1 - Vamos ver se já sabemos trabalhar com arrays?</h3>
-                    <p>Famoso Script com Guimic;</p>
-                    <p>Nesse exercício, usando as estruturas de arrays, criaremos
-                        uma lista com todos os meses do ano e através dessa lista
-                        e do feedback do usuário, exibiremos uma mensagem com
-                        nome do mês em questão;
-                    </p>
-                    <input type="text" id="mesniveruser" placeholder="Digite o seu mês de aniversário">
-                    <input type="button" id="botao_sec1" value="Enviar">
-                </form>
-            </div>
-        </sectiopn>
+                        <h3>Resultado : </h3>
+                    </div>
+                </section>
 
-        <section id="sec_2">
-            <div id="teste_1" onclick="clique()" onmouseenter="entrando()">
-                <h2>Eventos Dom</h2>
-                <h2>Interaja</h2>
-            </div>
-        </section>
-        <section id="sec_3">
-            <div class="calc">
-                <h1 class="titulo_calc">Interação com o DOM</h1>
-                <input type="number" name="vlrus1" id="vlr1" placeholder="Digite o 1° número"> +
-                <input type="number" name="vlrus2" id="vlr2" placeholder="Digite o 2° número">
-                <input type="button" id="botao_sec3" value="Resultado" onclick="somar()">
-            </div>
-            <div id="res">
+            </section>
 
-                <h3>Resultado : </h3>
-            </div>
-        </section>
+            <section id="sec_5">
 
-    </section>
+                <div class="tst_nac">
+                    <h2> És Brazuca ou non éres ?</h2>
+                    <input type="text" id="nac_user" placeholder="Digite o nome do seu país de origem...">
+                    <button onclick="f_tst_nac()">Testar</button>
+                </div>
 
-    <section id="sec_4">
+            </section>
+             
 
-        <div class="tst_nac">
-            <h2> És Brazuca ou non éres ?</h2>
-            <input type="text" id="nac_user" placeholder="Digite o nome do seu país de origem...">
-            <button onclick="f_tst_nac()">Testar</button>
-        </div>
-
-    </section>
-
-    <footer>
-        <div class="rodape">
-            <div class="rod_i1">
-                <p>*Página de estudos e testes de códigos...<strong> - Wittallo Marcos *</strong></p>
-            </div>
-        </div>
-    </footer>
+            <footer>
+                <div class="rodape">
+                    <div class="rod_i1">
+                        <p>*Página de estudos e testes de códigos...<strong> - Wittallo Marcos *</strong></p>
+                    </div>
+                </div>
+            </footer>
 
 
 
@@ -108,6 +111,6 @@
 
 
 
-</body>
+    </body>
 
 </html>

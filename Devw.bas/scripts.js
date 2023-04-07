@@ -2,6 +2,23 @@
 /**Páginas de scripts - Prof : Guanabara - cursoemvídeo */
 
 
+function scrguimic() {
+  
+    document.getElementById(mesniveruser)
+    var dtuser = Number(mesniveruser.value)
+    var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril' ] 
+    for(var l = 1; l <= meses.length; l++)
+    if(dtuser == l){
+        console.log(meses[l])
+    }
+
+  }
+
+
+
+
+
+
 // Exercício 1;
 const btn = document.querySelector('submit');
 
