@@ -2,17 +2,18 @@
 /**Páginas de scripts - Prof : Guanabara - cursoemvídeo */
 
 
+/* Exerçício com Arrays*/
 function scrguimic() {
-  
+
     document.getElementById(mesniveruser)
     var dtuser = Number(mesniveruser.value)
-    var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril' ] 
-    for(var l = 1; l <= meses.length; l++)
-    if(dtuser == l){
-        console.log(meses[l])
-    }
+    var meses = [' ', 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+    for (var l = 1; l <= meses.length; l++)
+        if (dtuser == l) {
+            console.log(meses[l])
+        }
 
-  }
+}
 
 
 
@@ -70,4 +71,12 @@ function f_tst_nac() {
     } else {
         window.alert('Eres Brazuca manito, muchos saludos !')
     }
+
 }
+
+var olaMundo = document.createElement("h1")
+document.innerHTML = "Olá Mundo"
+
+window.addEventListener("load", (carregado) => {
+    window.alert("The page is fully Load")
+})
