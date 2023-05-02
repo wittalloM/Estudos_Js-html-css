@@ -74,9 +74,7 @@ function f_tst_nac() {
 
 }
 
+var parag = document.querySelector('.teste')
 var olaMundo = document.createElement("h1")
-document.innerHTML = "Olá Mundo"
-
-window.addEventListener("load", (carregado) => {
-    window.alert("The page is fully Load")
-})
+olaMundo.textContent = 'Ola Mundo'
+parag.textContent = olaMundo
