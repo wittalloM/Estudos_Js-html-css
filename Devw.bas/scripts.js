@@ -3,20 +3,20 @@
 
 
 /* Exerçício com Arrays*/
-function scrguimic() {
 
-    document.getElementById(mesniveruser)
+
+function scrguimic() {
+    let  retorno_usuario = document.getElementById('retorno_mesniver')
+    document.getElementById('mesniveruser')
     var dtuser = Number(mesniveruser.value)
     var meses = [' ', 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
     for (var l = 1; l <= meses.length; l++)
         if (dtuser == l) {
             console.log(meses[l])
+            retorno_usuario.textContent = `O seu mês de nascimento é ${meses[l]}`
         }
 
 }
-
-
-
 
 
 
@@ -56,7 +56,7 @@ function somar() {
     let n1 = Number(nbr.value)
     let n2 = Number(nbr2.value)
     let r = n1 + n2
-    res.innerHTML = `A soma entre os valores  <strong>${nbr.value} e ${nbr2.value} é : ${r}</strong>`
+    res.textContent = `A soma entre os valores ${nbr.value} e ${nbr2.value} é : ${r}.`
 }
 
 
@@ -74,7 +74,4 @@ function f_tst_nac() {
 
 }
 
-var parag = document.querySelector('.teste')
-var olaMundo = document.createElement("h1")
-olaMundo.textContent = 'Ola Mundo'
-parag.textContent = olaMundo
+

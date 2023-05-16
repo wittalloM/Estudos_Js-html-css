@@ -14,12 +14,12 @@ body {
     width: auto;
     height: 250px;
     padding-bottom: 5px;
+    margin: 10px -1rem;
     display: flex;
     flex-direction: column;
     background-image: url("https://gbdesignstudio.co.uk/wp-content/uploads/2021/04/9-Ways-Web-Design-Is-Different-Than-Graphic-Design-.jpg");
     background-position: center;
     background-size: cover;
-    border-radius: 16px;
     text-align: center;
 
 }
@@ -46,12 +46,12 @@ body {
 
 #sec1-item-bar {
     padding: 15px 10px;
+    margin: 25px -1rem;
     background-color: #476b69;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    border-radius: 16px;
 }
 
 .item {
@@ -76,9 +76,10 @@ body {
 
 .sec2-form-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2.5rem;
+    margin: 20px 0px;
 }
 
 .form-user {
@@ -117,6 +118,7 @@ body {
 #botao_sec2 {
     padding: 0.8rem;
     background-color: #476b69;
+    border: solid 2px #476b69;
     border-radius: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -193,6 +195,7 @@ body {
     text-transform: uppercase;
     padding: 0.8rem;
     background-color: #476b69;
+    border: solid 2px #476b69;
     border-radius: 12px;
     color: #ffffff;
     margin-top: 1.8rem;
@@ -250,6 +253,7 @@ body {
     text-transform: uppercase;
     padding: 0.8rem;
     background-color: #476b69;
+    
     border-radius: 12px;
     color: #ffffff;
     margin-top: 1.8rem;
