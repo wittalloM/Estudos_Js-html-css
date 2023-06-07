@@ -10,40 +10,38 @@ const esp_do_jogo = document.getElementById("esp_do_jogo")
 const avisos = document.getElementById("avisos")
 
 
-let current = 0;
-let quant_acertos = 0;
+const current = 0;
+const quant_acertos = 0;
 
 
 
 function carregarQuestao() {
     quant_perguntas.innerHTML = `${current + 1}/${Questions.length}`;
     const questao = Questions[current];
-    alternativas_resp.innerHTML = " ";
     perguntas.innerHTML = questao.question;
 
-    questao.respostas.forEach((respostas) => {
-        const div = document.createElement("div");
+    questao.answers.forEach((answers) => {
+        const div = document.createElement('div');
         div.innerHTML = `
-        <button id="answer" data-correct= "${respostas.correct}">
-        ${respostas.opcao} </button>
+        <button class="answer" data-correct="${answers.correct}">
+        ${answers.option} </button>
         `;
         alternativas_resp.appendChild(div);
     });
 
 
-    document.querySelectorAll("#answer").forEach((item) => {
+    document.querySelectorAll('.answer').forEach((item) => {
         item.addEventListener('click', prox_questao);
     });
 }
 
 
 function prox_questao(e) {
-    let resp = e.target.getAttribute("data-correct");
-    console.log("evento is on");
-    if (resp === "true") {
+    let resposta = e.currentTarget.getAttribute("data-correct");
+    if (resposta === "true") {
         quant_acertos++;
         current++;
-        prox_questao()
+        carregarQuestao();
     }
     if (current < Questions.lenght - 1) {
         current++;
@@ -54,7 +52,7 @@ function prox_questao(e) {
 }
 
 function game_Over() {
-    pontuacao.innerHTML = ` Parabés você acertou ${quant_acertos} de ${Questions.length}`;
+    pontuacao.textContent = ` Parabés você acertou ${quant_acertos} de ${Questions.length}`;
     esp_do_jogo.style.display = "none";
     avisos.style.display = "flex";
 

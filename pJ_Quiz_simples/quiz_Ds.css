@@ -14,6 +14,21 @@ body {
 }
 
 
+
+#titulo_app {
+    margin: 50px 0px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Rubik Wet Paint', cursive;
+    color: #08226C;
+
+}
+
+
 #esp_do_jogo {
     display: flex;
     flex-direction: column;
@@ -48,7 +63,7 @@ body {
     gap: 5px;
 }
 
-#answer {
+.answer {
     padding: 15px 35px;
     margin: 10px 0px;
     background-color: #050404;
@@ -59,7 +74,7 @@ body {
     color: aliceblue;
 }
 
-#answer:hover {
+.answer:hover {
     font-size: 1rem;
     background-image: linear-gradient(80deg, #08226C 0%, #050404 100%);
     transition: 0.4s;

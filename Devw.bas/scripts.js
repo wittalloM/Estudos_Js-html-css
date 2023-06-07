@@ -1,12 +1,18 @@
 
 /**Páginas de scripts - Prof : Guanabara - cursoemvídeo */
 
+const time = document.querySelector('sec_7')
+const time_div = document.querySelector('.Exer-1')
+const img = document.querySelector('#img_bv')
+const tempo = document.getElementById('tst_func')
+
+
 
 /* Exerçício com Arrays*/
 
 
 function scrguimic() {
-    let  retorno_usuario = document.getElementById('retorno_mesniver')
+    let retorno_usuario = document.getElementById('retorno_mesniver')
     document.getElementById('mesniveruser')
     var dtuser = Number(mesniveruser.value)
     var meses = [' ', 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
@@ -21,13 +27,7 @@ function scrguimic() {
 
 
 // Exercício 1;
-const btn = document.querySelector('submit');
 
-btn.addEventListener("click", function (e) {
-    e.preventDefault();
-    const value = mesniveruser.value;
-    console.log(value);
-});
 
 
 /*Manipulando Eventos no JavaScript*/
@@ -39,13 +39,7 @@ mod.addEventListener('click', clique)
 mod.addEventListener('onmouseenter', entrando)
 
 
-function clique() {
 
-    window.alert('Teste 1... concluído !');
-}
-function entrando() {
-    mod.innerHTML = "On mouse enter is on, baby"
-}
 
 
 //  Função simples Exerc 3;
@@ -74,4 +68,31 @@ function f_tst_nac() {
 
 }
 
+// Script do Exercício TimeStamp (curso em vídeo)
+function time_stamp() {
+    let data = new Date();
+    let horario = data.getHours();
+    let msg_bv = document.createElement('h2');
+    msg_bv.textContent = `Agora são ${horario} horas.`;
+    time_div.appendChild(msg_bv);
 
+    if (horario >= 0 && horario < 12) {
+        msg_bv.textContent = `Bom dia, agora são ${horario} horas.`
+        img.src = '../Devw.bas/arts/Dia-Exerc-TimeStamp.png'
+        time_div.style.backgroundColor = '#FDDA76'
+    } else if (horario >= 12 && horario < 18)  {
+        msg_bv.textContent = `Boa tarde, agora são ${horario} horas`
+        img.src = '../Devw.bas/arts/Tarde-Exerc-TimeStamp.png'
+        time_div.style.backgroundColor = '#9A7855'
+    } else if (horario >= 18 && horario < 0)  {
+        msg_bv.textContent = `Boa Noite, agora são ${horario} horas !`
+        img.src = '../Devw.bas/arts/Noite-Exerc-TimeStamp.png'
+        time_div.style.backgroundColor = '#0F3B56'
+    }
+}
+
+function tmp_real() {
+    var dateString = new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
+    var formattedString = dateString.replace(", ", " - ");
+    tempo.innerHTML = formattedString;
+}
