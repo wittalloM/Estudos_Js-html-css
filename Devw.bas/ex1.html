@@ -99,7 +99,7 @@
             <div class="tst_nac">
                 <h2> És Brazuca ou non éres ?</h2>
                 <input type="text" id="nac_user" placeholder="Digite o nome do seu país de origem...">
-                <button onclick="f_tst_nac()">Testar</button>
+                <input type="button" id="botão_tst_nac" onclick="f_tst_nac()" value="Testar">
             </div>
 
         </section>
@@ -123,10 +123,10 @@
                     <label for="ano_nasc">Data de Nascimento</label>
                     <input type="date" id="ano_nasc">
                     <p>Sexo</p>
-                    <label for="sexomas">Masculino</label>
-                    <input type="radio" id="sexomas">
-                    <label for="sexofem">Feminino</label>
-                    <input type="radio" id="sexofem">
+
+                    <label for="sexomas">Masculino<input type="radio" id="sexomas" name="sexo"
+                            value="Masculino"></label>
+                    <label for="sexofem">Feminino <input type="radio" id="sexofem" name="sexo" value="Feminino"></label>
                     <input type="button" id="enviar_dados" value="Enviar">
                 </form>
             </div>
@@ -143,7 +143,7 @@
 
         <footer>
             <div class="rodape">
-                <div class="rod_i1">
+                <div class="rodape_box">
                     <p>Página de estudos e testes de códigos - &copy Wittallo Marcos </p>
                 </div>
             </div>

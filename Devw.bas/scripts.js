@@ -33,16 +33,10 @@ function scrguimic() {
 /*Manipulando Eventos no JavaScript*/
 
 
-// Exercício 2 Usando classes de JavaScript para alterar o estado de elementos, por meio de identificadores;
-var mod = window.document.getElementById('sec_2')
-mod.addEventListener('click', clique)
-mod.addEventListener('onmouseenter', entrando)
 
 
 
-
-
-//  Função simples Exerc 3;
+//  Função simples Exerc 3; (usando inputs do user para realizar funções e retornar dados)
 function somar() {
     let nbr = document.getElementById("vlr1")
     let nbr2 = document.getElementById("vlr2")
@@ -77,15 +71,15 @@ function time_stamp() {
     time_div.appendChild(msg_bv);
 
     if (horario >= 0 && horario < 12) {
-        msg_bv.textContent = `Bom dia, agora são ${horario} horas.`
+        msg_bv.textContent = `Bom dia, agora são ${horario} horas !`
         img.src = '../Devw.bas/arts/Dia-Exerc-TimeStamp.png'
         time_div.style.backgroundColor = '#FDDA76'
-    } else if (horario >= 12 && horario < 18)  {
-        msg_bv.textContent = `Boa tarde, agora são ${horario} horas`
+    } else if (horario >= 12 && horario < 18) {
+        msg_bv.textContent = `Boa tarde, agora são ${horario} horas !`
         img.src = '../Devw.bas/arts/Tarde-Exerc-TimeStamp.png'
         time_div.style.backgroundColor = '#9A7855'
-    } else if (horario >= 18 && horario < 0)  {
-        msg_bv.textContent = `Boa Noite, agora são ${horario} horas !`
+    } else if (horario >= 18 && horario < 0) {
+        msg_bv.textContent = `Boa noite, agora são ${horario} horas !`
         img.src = '../Devw.bas/arts/Noite-Exerc-TimeStamp.png'
         time_div.style.backgroundColor = '#0F3B56'
     }
@@ -95,4 +89,5 @@ function tmp_real() {
     var dateString = new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
     var formattedString = dateString.replace(", ", " - ");
     tempo.innerHTML = formattedString;
+
 }

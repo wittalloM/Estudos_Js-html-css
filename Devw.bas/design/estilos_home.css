@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Raleway&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Poppins&family=Raleway&family=Rubik&display=swap');
+
 
 body {
     padding: 0;
     margin: 0;
-    background-color: #000000;
+    background-color: #101010;
     color: #ffffff;
-    font-family: "Raleway", sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 .nav_bar {
     height: 100px;
     padding: 20px 20px;
-    margin: -10px -10px;
+    margin: 30px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: #121212;
+    justify-content: space-between;
     color: #E5E5E5;
-    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -46,18 +45,116 @@ body {
     background-color: #252525;
     border-radius: 15px;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bolder;
 }
 
-.item a:link, a:visited {
+.item a:link,
+a:visited {
     text-decoration: none;
     color: currentColor;
 }
 
 .item :hover {
-    opacity: 0.5;
-    transition: 0.2s;
+    opacity: 1.0;
+    transition: 0.4s;
     cursor: pointer;
-    color: aqua;
+    font-size: 120%;
+    color: #f5cb5c;
+}
+
+.cont_prin {
+    padding: 25px 20px;
+    margin: 30px 0px;
+    display: grid;
+    grid-template-areas:
+        "artigo_Js artigo_Js more_info"
+        "artigo_Js artigo_Js more_info"
+        "artigo_Js artigo_Js more_info"
+        "rodape rodape rodape ";
+    grid-gap: 20px;
+}
+
+.artigo_Js {
+    grid-area: "artigo_Js";
+    grid-column: "artigo_Js";
+    padding: 15px 5px;
+    margin: 5px 5px;
+    font-family: "Work", sans-serif;
+    font-size: 16px;
+}
+
+.artigo_Js h1 {
+    font-family: "Geologica", sans-serif;
+    font-size: 2.4rem;
+    color: #f5cb5c;
+}
+
+.artigo_Js h3 {
+    font-size: 1rem;
+    font-family: "Geologica", sans-serif;
+    color: #c051db;
+    font-weight: bolder;
+}
+
+.more_info {
+    grid-area: "more_info";
+    grid-row: "more_info";
+    background-color: #151515;
+    padding: 15px 10px;
+    margin: 50px 0px;
+    height: 500px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.link_info1 {
+    padding: 20px 25px;
+    margin: 20px 0px;
+    background-image: url("https://marquesfernandes.com/wp-content/uploads/2020/01/1555172.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: #f5cb5c 1px solid;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 0.5rem;
+
+}
+
+.link_info2 {
+    padding: 20px 25px;
+    margin: 20px 0px;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp5070716.jpg&f=1&nofb=1&ipt=86fd3fe9646f08729dc42a81218190b3b0d566a3fe0267f4ea7952716e8fbede&ipo=images");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    border: #f5cb5c 1px solid;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 0.5rem;
+}
+
+.link_info3 {
+    padding: 20px 25px;
+    margin: 20px 0px;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4923981.jpg&f=1&nofb=1&ipt=9db55b27232111137f295c4f6160523a5f3d81e1bbb1f1f26ec2a81a62d3461a&ipo=images");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    border: #f5cb5c 1px solid;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 0.5rem;
+}
+
+.rodape {
+    grid-area: "rodape";
+    grid-column: "rodape";
+    padding: 25px 20px;
+    margin: 1rem 0rem;
+    background-color: #151515;
+    color: #f5cb5c;
+    text-align: center;
+    font-family: "Geologica", sans-serif;
 }
