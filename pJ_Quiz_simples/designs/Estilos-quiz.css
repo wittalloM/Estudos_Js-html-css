@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=IM+Fell+DW+Pica+SC&family=Jost&family=Raleway&display=swap');
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+    font-size: 0.8rem;
+    background:  url('https://images4.alphacoders.com/284/thumb-1920-284278.jpg') no-repeat fixed center ;
+    background-size: cover;
+  
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.t_quiz {
+    padding: 10px;
+    margin: 10px 5px;
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cont-principal {
+    width: auto;
+    max-width: 80%;
+    background-color: hsl(var(--hue), 50%, 10%);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.Question {
+    color: #ffffff;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 30%, 20%);
+    border: hsl(var(--hue), 10%, 10%);
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border: solid 2px hsl(var(--hue), 50%, 70%);
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hide {
+    display: none;
+}
