@@ -19,6 +19,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     justify-content: center;
@@ -57,13 +58,14 @@ body.wrong {
 
 .Question {
     color: #ffffff;
+    margin-top: 50px;
 }
 
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
+    gap: 15px;
+    margin: 80px 0 10px 0px;
 }
 
 .btn {
@@ -72,12 +74,16 @@ body.wrong {
     border: hsl(var(--hue), 10%, 10%);
     border-radius: 10px;
     padding: 5px 10px;
+    text-shadow: black;
+    font-size: 1rem;
+    font-weight: bold;
     color: white;
     outline: none;
 }
 
 .btn:hover {
     border: solid 2px hsl(var(--hue), 50%, 70%);
+    font-size: 170%;
 }
 
 .btn.correct {
@@ -93,8 +99,8 @@ body.wrong {
 .next-btn {
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 10px 20px;
-    margin: 0 10px;
+    padding: 15px 25px;
+    margin: 0 25px;
 }
 
 .controls {
@@ -107,3 +113,24 @@ body.wrong {
 .hide {
     display: none;
 }
+
+    .rodape {
+        color: #ffffff;
+        margin: 150px  5px 15px 5px ;
+        padding: 10px 15px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.5rem;
+        text-shadow: black;
+    }
+
+    .rodape :hover {
+        background-color: hsl(var(--hue), 35%, 30%);
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 200%;
+        transition: 0.1s;
+        cursor: pointer;
+    }

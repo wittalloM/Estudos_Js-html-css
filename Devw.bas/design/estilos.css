@@ -20,8 +20,10 @@ body {
 .nav_bar {
     height: 100px;
     padding: 20px 20px;
-    margin: 30px 0px;
+    margin: 20px 0px 80px 0px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     color: #E5E5E5;
     font-family: "Raleway", sans-serif;
@@ -31,11 +33,10 @@ body {
 
 
 .img_logo {
-    width: 130px;
-    height: 120px;
-    border-radius: 50%;
-    image-rendering: crisp-edges;
-
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    image-rendering: optimizeQuality;
 }
 
 .nav_space {
@@ -51,13 +52,14 @@ body {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .item_nav {
-    margin: 5px 10px;
+    margin: 10px 20px;
     padding: 10px 20px;
     background-color: #181818;
+    color: #2a9d8f;
     border-radius: 15px;
     letter-spacing: 1px;
     font-size: 0.8rem;
@@ -92,7 +94,8 @@ a:visited {
 }
 
 .item {
-    background-color: #f5cb5c;
+    background: fixed linear-gradient(90deg, hsla(44, 85%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 71%, hsla(265, 68%, 45%, 1) 100%);
+    ;
     width: auto;
     padding: 20px;
     border-radius: 15px;
@@ -100,7 +103,7 @@ a:visited {
 
 
 .item:hover {
-    border: #ffffff solid 4px;
+    border: #f5cb5c solid 4px;
     transition: 0.2s;
     letter-spacing: 1px;
 }
@@ -200,14 +203,14 @@ a:visited {
 }
 
 .calc {
-    margin: 2rem 0rem;
+    margin: 2rem -1rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #151515;
-    border-radius: 16px;
+    background-image: url("https://wallpapercave.com/wp/wp11176556.jpg");
+    background-size: cover;
 }
 
 
@@ -259,7 +262,7 @@ a:visited {
 .tst_nac {
     display: flex;
     flex-direction: column;
-    align-items: normal;
+    align-items: center;
     padding: 10px 25px;
     margin: 1rem 0rem;
     background-color: #151515;
@@ -274,6 +277,7 @@ a:visited {
 }
 
 .tst_nac input {
+    width: 350px;
     margin: 15px 0px;
     padding: 12px 5px;
     background-color: #1b1b1b;
@@ -283,15 +287,15 @@ a:visited {
 }
 
 #botão_tst_nac {
-    font-size: 14px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    padding: 10px 20px;
+    margin: 25px 0px;
+    padding: 10px 10px;
     background-color: #1b1b1b;
     border: solid 2px #1b1b1b;
     border-radius: 18px;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 1px;
     color: #f5cb5c;
-    margin: 25px 0px;
 }
 
 #botão_tst_nac:hover {
