@@ -71,14 +71,7 @@
             </div>
             </sectiopn>
 
-            <section id="sec_3">
-                <div id="teste-1" onclick="clique()" onmouseenter="entrando()">
-                    <h1>Eventos Dom</h1>
-                    <h2>
-                        <strtong>Interaja/Clique</strtong>
-                    </h2>
-                </div>
-            </section>
+
             <section id="sec_4">
                 <div class="calc">
                     <h1 class="titulo_calc">Interação com o DOM</h1>
@@ -116,22 +109,47 @@
             </div>
         </section>
         <section id="sec_8">
-            <div class="info_us">
-                <form>
-                    <label for="Name">Nome</label>
-                    <input type="text" id="Name" placeholder="Nome Completo">
-                    <label for="ano_nasc">Data de Nascimento</label>
-                    <input type="date" id="ano_nasc">
-                    <p>Sexo</p>
 
-                    <label for="sexomas">Masculino<input type="radio" id="sexomas" name="sexo"
-                            value="Masculino"></label>
-                    <label for="sexofem">Feminino <input type="radio" id="sexofem" name="sexo" value="Feminino"></label>
-                    <input type="button" id="enviar_dados" value="Enviar">
-                </form>
+            <div class="container-sec_8">
+                <div class="info-us">
+                    <div class="tit-form-us">
+                        <h2>Cadastre-se !</h2>
+                    </div>
+                    <form>
+                        <div class="input-box-names">
+                            <div class="input-box">
+                                <label for="Name">Nome *  :</label>
+                                <input type="text" id="Name" placeholder="Nome Completo" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="ano_nasc">Ano de Nasc *  :</label>
+                                <input type="number" id="ano_nasc" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="profissão">Profissão :</label>
+                                <input type="text" id="profissão" placeholder="Qual a sua profissão ?" required>
+                            </div>
+                        </div>
+                        <p>Sexo :</p>
+                        <div class="input-box-gender">
+                            <div class="gender-box">
+                                <input type="radio" id="sexomas" name="sexo" value="Masculino" checked>
+                                <label for="sexomas" id="sexomasleg">Masculino</label>
+                            </div>
+                            <div class="gender-box">
+                                <input type="radio" id="sexofem" name="sexo">
+                                <label for="sexofem" id="sexofemleg">Feminino</label>
+                            </div>
+                        </div>
+                        <div class="form-button">
+                            <input type="button" class="form-button1-enviar" id="enviar_dados" value="Enviar" onclick="retorno_usuario()">
+                        </div>
+                    </form>
+                </div>
+
             </div>
-
-            <div class="ret_us">
+            <div class="ret_usr">
+               
 
             </div>
         </section>

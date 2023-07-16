@@ -179,21 +179,6 @@ a:visited {
     text-align: center;
 }
 
-#sec_3 {
-    background-color: #151515;
-    color: #ffffff;
-    border-radius: 16px;
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 5px;
-}
-
-#sec_3 h2 {
-    font-size: 1rem;
-    font-family: 'Work', sans-serif;
-    color: #f5cb5c;
-    letter-spacing: 2px;
-}
 
 
 .titulo_calc {
@@ -254,8 +239,10 @@ a:visited {
     border-radius: 20px;
     padding: 25px;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    color: #f5cb5c;
     letter-spacing: 1px;
 }
 
@@ -326,48 +313,141 @@ a:visited {
 }
 
 
-.info_us {
+.container-sec_8 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Work", sans-serif;
     background-color: #151515;
-    border-radius: 15px;
+    text-align: left;
 }
 
-.info_us form {
-    padding: 20px 20px;
+
+.container-sec_8 p {
+    display: flex;
+    text-align: left;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.tit-form-us {
+    display: flex;
+    text-align: left;
+    padding: 10px 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: #2a9d8f 1px 1px 8px;
+}
+
+.info-us {
+    margin: 10px 0px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.info_us label {
-    margin: 12px 0px;
+.info-us form {
+    margin: 5px 0px;
+    padding: 25px 40px;
+    box-shadow: 5px 5px 10px rgba(148, 210, 189, .100);
+    background-color: #181818;
+    border-radius: 10px;
+    text-align: left;
+
 }
 
-.info_us input {
+.info-us label {
+    color: #83c2ba;
+    font-weight: 600;
+}
+
+.input-box-names {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-box {
+    margin: 5px 0px;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+
+}
+
+
+.input-box input {
+    padding: 8px;
+    margin-left: 10px;
+    background-color: #000000;
+    border-radius: 12px;
+    border: none;
+    color: #E5E5E5;
+    box-shadow: 1px 1px 1px #132c29;
+}
+
+
+.input-box-gender {
+    margin: 5px 0px;
+    display: flex;
+    padding: 10px 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.form-button {
+    display: flex;
+    justify-content: center;
+}
+
+.form-button1-enviar {
+    margin: 20px 0px;
+    padding: 10px 150px;
     background-color: #1b1b1b;
-    border: 2px solid #1b1b1b;
-    border-radius: 15px;
-    padding: 12px 10px;
-}
-
-/*Botão Form - info_us*/
-
-#enviar_dados {
-    margin-top: 40px;
-    font-weight: bolder;
+    border: solid 3px #1b1b1b;
     color: #f5cb5c;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
-#enviar_dados:hover {
+.form-button1-enviar:hover {
     background-color: #f5cb5c;
-    border: #f5cb5c solid 2px;
-    transition: 0.2s;
+    border: solid 2px #f5cb5c;
+    border-radius: 15px;
+    transition: 0.4s;
+    font-size: 110%;
     color: #101010;
-    font-size: 105%;
-    letter-spacing: 1px;
-
 }
 
-/*Botões radio - form*/
+#foto_ret_usr {
+    margin: 30px 0px;
+    width: 30%;
+    height: 55%;
+    border-radius: 50%;
+    image-rendering: optimizeSpeed
+}
+
+.ret_usr {
+    margin: 30px 25px;
+    padding: 15px;
+    background: #5b7471;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f3f2f1;
+    text-shadow: 1px 1px 10px #000000 .250;
+}
 
 
 .relogio {

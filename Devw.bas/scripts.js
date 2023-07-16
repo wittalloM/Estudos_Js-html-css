@@ -78,7 +78,7 @@ function time_stamp() {
         msg_bv.textContent = `Boa tarde, agora são ${horario} horas !`
         img.src = '../Devw.bas/arts/Tarde-Exerc-TimeStamp.png'
         time_div.style.backgroundColor = '#9A7855'
-    } else if (horario >= 18 && horario < 0) {
+    } else if (horario >= 18 && horario < 0o0) {
         msg_bv.textContent = `Boa noite, agora são ${horario} horas !`
         img.src = '../Devw.bas/arts/Noite-Exerc-TimeStamp.png'
         time_div.style.backgroundColor = '#0F3B56'
@@ -89,5 +89,60 @@ function tmp_real() {
     var dateString = new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
     var formattedString = dateString.replace(", ", " - ");
     tempo.innerHTML = formattedString;
+
+}
+
+function retorno_usuario() {
+    const resp = document.querySelector('.ret_usr')
+    const data_de_nascimento = document.querySelector('#ano_nasc')
+    const Vsex = document.getElementsByName('sexo')
+
+    let data = new Date()
+    let ano_atual = data.getFullYear()
+    let idade = ano_atual - Number(data_de_nascimento.value)
+
+    if (data_de_nascimento.value.length == 0 || data_de_nascimento > ano_atual) {
+        window.alert('Digite a sua data de nascimento corretamente, ou tente novamente')
+    } else {
+        var genero = ' '
+        if (Vsex[0].checked) {
+            genero = 'Masculino'
+        }
+
+        else if (Vsex[1].checked) {
+            genero = 'Feminino'
+        }
+
+        if (idade > 0 && idade < 8) {
+            var img_retorno = document.createElement('img');
+            img_retorno.setAttribute('id', 'foto_ret_usr');
+            img_retorno.src = 'https://avatars.dzeninfra.ru/get-zen_doc/5283638/pub_62137b5dc8c5f1182b763a21_62137b9e62aacd5123633298/scale_1200';
+            
+            resp.style.textalign = 'center'
+            resp.innerHTML = ` Detectamos um usuário menor de idade com aproximadamente ${idade} anos de idade e  do sexo ${genero}, olá seja bem vindo ao nosso identificador de usuário`
+            
+        }   if (idade >= 18 && idade <= 50) {
+            var img_retorno = document.createElement('img');
+            img_retorno.setAttribute('id', 'foto_ret_usr');
+            resp.style.textalign = 'center'
+            resp.innerHTML  = ` Detectamos homem adulto com ${idade} anos e do sexo ${genero}, seja bem vindo, e aprecie o serviço`
+            
+            img_retorno.src = 'https://i.imgur.com/I4piNxb.jpeg';
+            resp.appendChild(img_retorno)
+        }
+
+
+
+    
+    }
+
+    resp.style.textAlign = 'center'
+    resp.textContent = ` Olá, me parece que você é do gênero ${genero} e têm ${idade} anos...`
+
+
+
+
+
+
 
 }
