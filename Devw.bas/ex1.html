@@ -118,11 +118,11 @@
                     <form>
                         <div class="input-box-names">
                             <div class="input-box">
-                                <label for="Name">Nome *  :</label>
+                                <label for="Name">Nome * :</label>
                                 <input type="text" id="Name" placeholder="Nome Completo" required>
                             </div>
                             <div class="input-box">
-                                <label for="ano_nasc">Ano de Nasc *  :</label>
+                                <label for="ano_nasc">Ano de Nasc * :</label>
                                 <input type="number" id="ano_nasc" required>
                             </div>
                             <div class="input-box">
@@ -142,14 +142,15 @@
                             </div>
                         </div>
                         <div class="form-button">
-                            <input type="button" class="form-button1-enviar" id="enviar_dados" value="Enviar" onclick="retorno_usuario()">
+                            <input type="button" class="form-button1-enviar" id="enviar_dados" value="Enviar"
+                                onclick="retorno_usuario()">
                         </div>
                     </form>
                 </div>
 
             </div>
             <div class="ret_usr">
-               
+
 
             </div>
         </section>
@@ -159,15 +160,29 @@
             <p id="tst_func"></p>
         </div>
 
-        <footer>
-            <div class="rodape">
-                <div class="rodape_box">
-                    <p>Página de estudos e testes de códigos - &copy Wittallo Marcos </p>
-                </div>
-            </div>
-        </footer>
+        <div class="Exer-5">
+            <h1>Exercício 5 (C&V) - Contador com emojis </h1>
+            <p>Início</p>
+            <input type="text" id="cond_Ini" placeholder="Digite a condição de início da contagem">
+            <p>Condição</p>
+            <input type="text" id="cond" placeholder="Digite a condição da contagem">
+            <p>Fim</p>
+            <input type="text" id="cond_fin" placeholder="Digite a condição para o final da contagem">
+            <button id="ini_Contador" onclick="ini_Contagem()">Começar Contagem</button>
+            <div class="resp_req_us">
+                <h3>Contagem: </h3>
+                <h6 id="cont_c_emj"></h6>
+            </div> 
 
-        <script src="scripts.js" defer></script>
+                <footer>
+                    <div class="rodape">
+                        <div class="rodape_box">
+                            <p>Página de estudos e testes de códigos - &copy Wittallo Marcos </p>
+                        </div>
+                    </div>
+                </footer>
+
+                <script src="scripts.js" defer></script>
 
 
 

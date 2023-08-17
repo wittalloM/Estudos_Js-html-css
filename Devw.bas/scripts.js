@@ -63,6 +63,7 @@ function f_tst_nac() {
 }
 
 // Script do Exercício TimeStamp (curso em vídeo)
+
 function time_stamp() {
     let data = new Date();
     let horario = data.getHours();
@@ -78,12 +79,14 @@ function time_stamp() {
         msg_bv.textContent = `Boa tarde, agora são ${horario} horas !`
         img.src = '../Devw.bas/arts/Tarde-Exerc-TimeStamp.png'
         time_div.style.backgroundColor = '#9A7855'
-    } else if (horario >= 18 && horario < 0o0) {
+    } else if (horario >= 18 && horario <= 24) {
         msg_bv.textContent = `Boa noite, agora são ${horario} horas !`
         img.src = '../Devw.bas/arts/Noite-Exerc-TimeStamp.png'
         time_div.style.backgroundColor = '#0F3B56'
     }
 }
+
+// Função usando os objeto Date, e seus vários métodos;
 
 function tmp_real() {
     var dateString = new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
@@ -91,6 +94,7 @@ function tmp_real() {
     tempo.innerHTML = formattedString;
 
 }
+// Exercício 3 curso de JavaScript - Curso em vídeo 
 
 function retorno_usuario() {
     const resp = document.querySelector('.ret_usr')
@@ -104,45 +108,95 @@ function retorno_usuario() {
     if (data_de_nascimento.value.length == 0 || data_de_nascimento > ano_atual) {
         window.alert('Digite a sua data de nascimento corretamente, ou tente novamente')
     } else {
+
         var genero = ' '
         if (Vsex[0].checked) {
             genero = 'Masculino'
+            if (idade > 0 && idade <= 8) {
+                var img_retorno = document.createElement('img')
+                img_retorno.setAttribute('id', 'foto_ret_usr');
+                img_retorno.setAttribute('src', 'https://avatars.dzeninfra.ru/get-zen_doc/5283638/pub_62137b5dc8c5f1182b763a21_62137b9e62aacd5123633298/scale_1200');
+
+
+                resp.style.textalign = 'center'
+                resp.innerHTML = ` Detectamos um usuário menor de idade com aproximadamente ${idade} anos de idade e  do sexo ${genero}, olá seja bem vindo ao nosso identificador de usuário.`
+                resp.appendChild(img_retorno)
+            }
+            if (idade >= 12 && idade <= 21) {
+                var img_retorno = document.createElement('img')
+                img_retorno.setAttribute('id', 'foto_ret_usr');
+                img_retorno.setAttribute('src', 'https://dsavenko.me/content/images/2018/06/shocked.jpg')
+
+                resp.style.textalign = 'center'
+                resp.appendChild(img_retorno)
+                resp.innerHTML = ` Detectamos homem adulto com ${idade} anos e do sexo ${genero}, seja bem vindo, e aprecie o serviço.`
+
+            }
+
+            else if (idade >= 21 && idade <= 60) {
+                var img_retorno = document.createElement('img')
+                img_retorno.setAttribute('id', 'foto_ret_usr');
+                img_retorno.setAttribute('src', 'https://dsavenko.me/content/images/2018/06/shocked.jpg');
+
+                resp.style.textalign = 'center'
+                resp.innerHTML = ` Detectamos homem adulto com ${idade} anos e do sexo ${genero}, seja bem vindo, e aprecie o serviço.`
+                resp.appendChild(img_retorno)
+            }
         }
 
         else if (Vsex[1].checked) {
             genero = 'Feminino'
+
+            if (idade > 0 && idade <= 8) {
+                var img_retorno = document.createElement('img')
+                img_retorno.setAttribute('id', 'foto_ret_usr');
+                img_retorno.setAttribute('src', 'https://www.reab.me/wp-content/uploads/2019/01/OH1S9W0-1.jpg');
+
+
+                resp.style.textalign = 'center'
+                resp.innerHTML = ` Detectamos um usuário menor de idade com aproximadamente ${idade} anos de idade e  do sexo ${genero}, olá seja bem vindo ao nosso identificador de usuário.`
+                resp.appendChild(img_retorno)
+            }
+            if (idade >= 12 && idade <= 35) {
+                var img_retorno = document.createElement('img')
+                img_retorno.setAttribute('id', 'foto_ret_usr');
+                img_retorno.setAttribute('src', ' https://w7.pngwing.com/pngs/980/166/png-transparent-woman-face-beauty-parlour-woman-fashion-hair-straightening-faces-face-cosmetics-people.png')
+
+                resp.style.textalign = 'center'
+                resp.innerHTML = ` Detectamos ${genero} com ${idade} anos, seja bem vindo, e aprecie o serviço.`
+                resp.appendChild(img_retorno)
+
+            }
+
+            else if (idade >= 40 && idade <= 60) {
+                var img_retorno = document.createElement('img')
+                img_retorno.setAttribute('id', 'foto_ret_usr');
+                img_retorno.setAttribute('src', 'https://i.pinimg.com/originals/42/5b/64/425b64ca1110fbaf471bdce1338fcefe.jpg');
+
+                resp.style.textalign = 'center'
+                resp.innerHTML = ` Detectamos homem adulto com ${idade} anos e do sexo ${genero}, seja bem vindo, e aprecie o serviço.`
+                resp.appendChild(img_retorno)
+            }
         }
-
-        if (idade > 0 && idade < 8) {
-            var img_retorno = document.createElement('img');
-            img_retorno.setAttribute('id', 'foto_ret_usr');
-            img_retorno.src = 'https://avatars.dzeninfra.ru/get-zen_doc/5283638/pub_62137b5dc8c5f1182b763a21_62137b9e62aacd5123633298/scale_1200';
-            
-            resp.style.textalign = 'center'
-            resp.innerHTML = ` Detectamos um usuário menor de idade com aproximadamente ${idade} anos de idade e  do sexo ${genero}, olá seja bem vindo ao nosso identificador de usuário`
-            
-        }   if (idade >= 18 && idade <= 50) {
-            var img_retorno = document.createElement('img');
-            img_retorno.setAttribute('id', 'foto_ret_usr');
-            resp.style.textalign = 'center'
-            resp.innerHTML  = ` Detectamos homem adulto com ${idade} anos e do sexo ${genero}, seja bem vindo, e aprecie o serviço`
-            
-            img_retorno.src = 'https://i.imgur.com/I4piNxb.jpeg';
-            resp.appendChild(img_retorno)
-        }
-
-
-
-    
     }
-
-    resp.style.textAlign = 'center'
-    resp.textContent = ` Olá, me parece que você é do gênero ${genero} e têm ${idade} anos...`
+}
 
 
+function ini_Contagem() {
+    let inicializador = document.getElementById('cond_Ini');
+    let cond_user = document.getElementById('cond_');
+    let finalizador = document.getElementById('cond_fin');
 
+    ini = Number(inicializador.value);
+    con_Us = Number(cond_user.value);
+    fin = Number(finalizador.value);
+
+    for (ini<=fin; con_Us<=fin; con_Us++);
 
 
 
 
 }
+
+
+
