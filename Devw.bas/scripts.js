@@ -184,15 +184,46 @@ function retorno_usuario() {
 
 function ini_Contagem() {
     let inicializador = document.getElementById('cond_Ini');
-    let cond_user = document.getElementById('cond_');
+    let cond_user = document.getElementById('cond');
     let finalizador = document.getElementById('cond_fin');
+    let ret_cont = document.querySelector('.resp_req_us')
 
-    ini = Number(inicializador.value);
-    con_Us = Number(cond_user.value);
-    fin = Number(finalizador.value);
+    // let atrib = inicializador.getAttribute('value')
+    //console.log(atrib.valueOf());
 
-    for (ini<=fin; con_Us<=fin; con_Us++);
+    if (inicializador.value == '' || cond_user.value == '' || finalizador.value == '') {
+        ret_cont.innerHTML = `impossivel Iniciar a Caontagem \u{1F914}`;
+        ret_cont.style.textAllign = 'center';
+        window.alert('[-- Erro, por favor preencha todos os campos corretamente --]');
+    }
 
+    else {
+        ret_cont.innerHTML = 'Iniciando a contagem: ';
+        ret_cont.style.textAllign = 'center';
+        let ini = Number(inicializador.value);
+        let c_us = Number(cond_user.value);
+        let fnl = Number(finalizador.value);
+        // Contagem Crescente
+        if (ini < fnl) {
+            ret_cont.innerHTM = ''
+            for (var c = ini; c <= fnl; c += c_us) {
+                ret_cont.innerHTML += `${c} \u{1F449}`;
+
+            }
+         // Contagem Decrescente
+        } else if (ini > fnl) {
+            for (var c = ini; c <= fnl; c -= c_us) {
+                ret_cont.innerHTML += `${c} \u{1F449}`;
+
+            }
+        }
+
+    }
+
+
+
+    ret_cont.innerHTML += `${c} \u{1F449} ... final da contagem`;
+    ret_cont.style.textAllign = 'center';
 
 
 
