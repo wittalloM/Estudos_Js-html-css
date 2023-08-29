@@ -188,8 +188,7 @@ function ini_Contagem() {
     let finalizador = document.getElementById('cond_fin');
     let ret_cont = document.querySelector('.resp_req_us')
 
-    // let atrib = inicializador.getAttribute('value')
-    //console.log(atrib.valueOf());
+
 
     if (inicializador.value == '' || cond_user.value == '' || finalizador.value == '') {
         ret_cont.innerHTML = `impossivel Iniciar a Caontagem \u{1F914}`;
@@ -210,7 +209,7 @@ function ini_Contagem() {
                 ret_cont.innerHTML += `${c} \u{1F449}`;
 
             }
-         // Contagem Decrescente
+            // Contagem Decrescente
         } else if (ini > fnl) {
             for (var c = ini; c <= fnl; c -= c_us) {
                 ret_cont.innerHTML += `${c} \u{1F449}`;
