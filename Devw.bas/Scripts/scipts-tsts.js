@@ -1,31 +1,36 @@
-function Apl_num() {
 
 
-    const n_us = document.getElementById('num_do_us');
-    const par_de_ret = document.getElementById('par_de_imp');
+const n_us = document.getElementById('num_do_us');
+const ls_Num = document.getElementById('F_list');
+const res_aplNUm = document.getElementById('q_de_ins');
 
 
-    mst_de_numeros = [];
-    dd_do_us = Number(n_us.value);
+var Num_usr = [];
 
-    if (dd_do_us == 0) {
-        window.alert('Por favor digite um número para começarmos');
+function Is_Num(n) {
+    if (Number(n) >= 1 && Number(n) <= 100) {
+        return true
+    } else {
+        return false
     }
-
-    else if (dd_do_us > 0) {
-
-
-        mst_de_numeros.add(dd_do_us.value);
-        console.log(mst_de_numeros.length);
+}
 
 
-        for (let c = 0; c <= mst_de_numeros.length; c++) {
-
-            par_de_ret.textContent = mst_de_numeros[i];
-            window.alert(mst_de_numeros[i]);
-        }
+function Ver_ls(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
     }
+}
 
 
 
+function Ad_Numero() {
+    if (Is_Num(n_us.value) && Ver_ls(n_us.value, Num_usr)) {
+        window.alert('Aguarde')
+        console.log('Tudo Ok.')
+    } else {
+        window, alert('Por favor digite um valor válido. ( Números entre 0 e 100)')
+    }
 }
