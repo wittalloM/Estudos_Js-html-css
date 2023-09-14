@@ -27,10 +27,14 @@ function Ver_ls(n, l) {
 
 
 function Ad_Numero() {
-    if (Is_Num(n_us.value) && Ver_ls(n_us.value, Num_usr)) {
-        window.alert('Aguarde')
-        console.log('Tudo Ok.')
+    if (Is_Num(n_us.value) && !Ver_ls(n_us.value, Num_usr)) {
+        Num_usr.push(Number(n_us.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${n_us.value} adicionado`
+        ls_Num.appendChild(item)
     } else {
-        window, alert('Por favor digite um valor válido. ( Números entre 0 e 100)')
+        window, alert('Por favor digite um valor válido, o valor é invalido ou já foi adicionado. ( Números entre 0 e 100)')
     }
+    n_us.value = ''
+    n_us.focus()
 }
