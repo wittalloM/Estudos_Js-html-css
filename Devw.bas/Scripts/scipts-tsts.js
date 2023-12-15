@@ -60,7 +60,7 @@ function Fin_ver() {
             }
 
         }
-        res_fin = ''
+        res_fin.innerHTML = ''
         res_fin.innerHTML += `<p> A lista contém ${tot} elementos</p>`
         res_fin.innerHTML += `<p> O elemnto ${maior} é o maior número da lista</p>`
         res_fin.innerHTML += `<p> O elemnto ${menor} é o menor número da lista</p>`
