@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: "Helvetica" sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(45deg, rgba(2,0,36,1) 4%, rgba(34,34,43,1) 66%);
+}
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

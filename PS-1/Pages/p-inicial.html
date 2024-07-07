@@ -1,143 +1,146 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-Br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../Styles/p-inicial.css">
-        <link rel="shortcut icon" href="../Images/logoTab-helldev (1).png" type="image/x-icon">
-        <title>P - Inicial</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/p-inicial.css">
+    <link rel="shortcut icon" href="../Images/logoTab-helldev (1).png" type="image/x-icon">
+    <title>P - Inicial</title>
 
-    <body>
+</head>
 
-        <header class="header-menu">
-            <div class="boxlogo-menu">
-                <img class="logo-menu" src="../Images/logoMenu-helldev (1).png">
+<body>
+
+    <header class="header-menu">
+        <div class="boxlogo-menu">
+            <img class="logo-menu" src="../Images/logoMenu-helldev (1).png">
+        </div>
+
+        <div class="menu-itens">
+            <ul class="lista-menu">
+                <li class="ls-menuitem"><a href="">Home <i class="fa-solid fa-mug-saucer"></i></a></li>
+                <li class="ls-menuitem"><a href="">Info <i class="fa-solid fa-lightbulb"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <container class="box-cont1">
+        <section class="ling-hl">
+            <div class="boxbanner-c1">
+                <img class="banner-c1" src="../Images/hellDev(1).png" alt="Imagem Ilustrativa - Dev Buurnout">
+                <p id="animationbanner"></p>
+                <ul class="ret-animacao"></ul>
             </div>
+            <h2 class="titulo">O guia do programador fudido !</h2>
 
-            <div class="menu-itens">
-                <ul class="lista-menu">
-                    <li class="ls-menuitem"><a href="">Home <i class="fa-solid fa-mug-saucer"></i></a></li>
-                    <li class="ls-menuitem"><a href="">Info <i class="fa-solid fa-lightbulb"></i></a></li>
-                </ul>
-            </div>
-        </header>
+            <article class="boxtxt-c1">
+                <p>E já vamos começar com um clássico...</p>
+                <p>Todo bom estudante de programação sempre começa,
+                    contruindo, estilizando, arquitetando e adicionando
+                    pequenas funcionalidades em páginas web.
+                </p>
 
-        <container class="box-cont1">
-            <section class="ling-hl">
-                <h2 class="titulo">O guia do programador fudido !</h2>
-                <div class="boxbanner-c1">
-                    <img class="banner-c1" src="../Images/bannerHellDev.png" alt="Imagem Ilustrativa - Dev Buurnout">
-                </div>
-
-                <article class="boxtxt-c1">
-                    <p>E já vamos começar com um clássico</p>
-                    <p>Todo bom estudante de programação sempre começa,
-                        contruindo, estilizando, arquitetando e adicionando
-                        pequenas funcionalidades em páginas web.
-                    </p>
-
-                </article>
-            </section>
-            <form class="cad-usr">
-                <h3 class="subtitulo1">Vamos, me passe os seus dados <i class="fa-solid fa-coins"></i></h3>
-                <div class="cadusr-inputitens">
-                    <label for="usr-name">Nome <i class="fa-solid fa-user-pen"></i>
-                        <input id="usr-name" type="text" maxlength="50" class="i-caduser" title="Nome">
-                    </label>
-                    <label for="usr-Sname">SNome <i class="fa-solid fa-file-signature"></i>
-                        <input id="usr-Sname" type="text" maxlength="50" class="i-caduser" title="Sobrenome">
-                    </label>
-                    <label for="ph-number">Nª tel <i class="fa-solid fa-mobile"></i>
-                        <input id="ph-number" type="tel" maxlength="11" class="i-caduser" title="Tel-usuário">
-                    </label>
-                    <label for="usr-mail">Email <i class="fa-solid fa-envelope"></i>
-                        <input id="usr-mail" type="email" maxlength="50" class="i-caduser" title="Email-usuáro">
-                    </label>
-                </div>
-                <input type="reset" class="cadusr-btt" onclick="reset()" title="Resetar Dados">
-                <button type="button" class="cadusr-btt" id="cadusr-btt" title="Enviar Dados">Enviar Dados <i
-                        class="fa-solid fa-share-from-square"></i></button>
-            </form>
-        </container>
-
-        <container class="jg-memo">
-            <div class="jg-titulo">
-                <h2><i class="fa-solid fa-code"></i> Jogo de Dev, hein <i class="fa-solid fa-code"></i></h2>
-            </div>
-
-            <container id="jg-dinamica" class="jg-dinamica">
-                <div class="card1">
-                    <div class="front">
-                        <div id="card1-back" class="back"></div>
-                    </div>
-                </div>
-                <div class="card2">
-                    <div class="front">
-                        <div id="" class="back"></div>
-                    </div>
-                </div>
-                <div class="card3">
-                    <div class="front">
-                        <div class="back"></div>
-                    </div>
-                </div>
-                <div class="card4">
-                    <div class="front">
-                        <div class="back"></div>
-                    </div>
-                </div>
-                <div class="card5">
-                    <div class="front">
-                        <div class="back"></div>
-                    </div>
-                </div>
-                <div class="card6">
-                    <div class="front">
-                        <div class="back"></div>
-                    </div>
-                </div>
-            </container>
-
-        </container>
-
-        <container class="box-cont2">
-            <div class="box-cont2title">
-                <h2 class="titulo">Imperadora da Web .</h2>
-                <h3 class="subtitulo">há muito vêm sendo dito o quão importante ela
-                    foi e ainda o é para internet .
-                </h3>
-            </div>
-
-            <article class="boxtxt-c2">
-                <p>Foi criado por Brendan Eich
-                    na Netscape Communications no início da década
-                    de 1990 para tornar a web
-                    mais interativa e
-                    dinâmica, e desde então vẽm revolucionando a
-                    maneira como consumimos conteúdos na rede.</p>
-
-                <p>O impacto do JavaScript na programação web foi revolucionário. Antes de sua introdução, os sites eram
-                    estáticos e
-                    limitados em sua funcionalidade. Com o JavaScript, os desenvolvedores foram capazes de criar páginas
-                    web mais dinâmicas,
-                    que respondiam às ações do usuário e podiam atualizar seu conteúdo sem a necessidade de recarregar a
-                    página inteira.
-                    Isso proporcionou uma experiência de usuário muito mais agradável e interativa</p>
             </article>
-        </container>
-        <footer class="rodape">
-            <div class="rd-txt">
-                <h3>WittalloM <i class="fa-solid fa-code"></i></h3>
-                <p>Página para estudos e testes.</p>
-                <p>Linguagem alvo = JavaScript.</p>
+        </section>
+        <form class="cad-usr">
+            <h3 class="subtitulo1">Vamos, me passe os seus dados <i class="fa-solid fa-coins"></i></h3>
+            <div class="cadusr-inputitens">
+                <label for="usr-name">Nome <i class="fa-solid fa-user-pen"></i>
+                    <input id="usr-name" type="text" maxlength="50" class="i-caduser" title="Nome">
+                </label>
+                <label for="usr-Sname">SNome <i class="fa-solid fa-file-signature"></i>
+                    <input id="usr-Sname" type="text" maxlength="50" class="i-caduser" title="Sobrenome">
+                </label>
+                <label for="ph-number">Nª tel <i class="fa-solid fa-mobile"></i>
+                    <input id="ph-number" type="tel" maxlength="11" class="i-caduser" title="Tel-usuário">
+                </label>
+                <label for="usr-mail">Email <i class="fa-solid fa-envelope"></i>
+                    <input id="usr-mail" type="email" maxlength="50" class="i-caduser" title="Email-usuáro">
+                </label>
             </div>
-            <img class="dev-img" src="../Images/Ft-PfGoogle1.png">
-        </footer>
-    </body>
+            <input type="reset" class="cadusr-btt" onclick="reset()" title="Resetar Dados">
+            <button type="button" class="cadusr-btt" id="cadusr-btt" title="Enviar Dados">Enviar Dados <i
+                    class="fa-solid fa-share-from-square"></i></button>
+        </form>
+    </container>
 
-    <script src="https://kit.fontawesome.com/6fbc2ca5fd.js" crossorigin="anonymous"></script>
-    <script defer src="../Scripts/ps-Script.js"></script>
+    <container class="jg-memo">
+        <div class="jg-titulo">
+            <h2><i class="fa-solid fa-code"></i> Jogo de Dev, hein <i class="fa-solid fa-code"></i></h2>
+        </div>
+
+        <container id="jg-dinamica" class="jg-dinamica">
+            <div class="card1">
+                <div class="front">
+                    <div id="card1-back" class="back"></div>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="front">
+                    <div id="" class="back"></div>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="front">
+                    <div class="back"></div>
+                </div>
+            </div>
+            <div class="card4">
+                <div class="front">
+                    <div class="back"></div>
+                </div>
+            </div>
+            <div class="card5">
+                <div class="front">
+                    <div class="back"></div>
+                </div>
+            </div>
+            <div class="card6">
+                <div class="front">
+                    <div class="back"></div>
+                </div>
+            </div>
+        </container>
+
+    </container>
+
+    <container class="box-cont2">
+        <div class="box-cont2title">
+            <h2 class="titulo">Imperadora da Web .</h2>
+            <h3 class="subtitulo">há muito vêm sendo dito o quão importante ela
+                foi e ainda o é para internet .
+            </h3>
+        </div>
+
+        <article class="boxtxt-c2">
+            <p>Foi criado por Brendan Eich
+                na Netscape Communications no início da década
+                de 1990 para tornar a web
+                mais interativa e
+                dinâmica, e desde então vẽm revolucionando a
+                maneira como consumimos conteúdos na rede.</p>
+
+            <p>O impacto do JavaScript na programação web foi revolucionário. Antes de sua introdução, os sites eram
+                estáticos e
+                limitados em sua funcionalidade. Com o JavaScript, os desenvolvedores foram capazes de criar páginas
+                web mais dinâmicas,
+                que respondiam às ações do usuário e podiam atualizar seu conteúdo sem a necessidade de recarregar a
+                página inteira.
+                Isso proporcionou uma experiência de usuário muito mais agradável e interativa</p>
+        </article>
+    </container>
+    <footer class="rodape">
+        <div class="rd-txt">
+            <h3>WittalloM <i class="fa-solid fa-code"></i></h3>
+            <p>Página para estudos e testes.</p>
+            <p>Linguagem alvo = JavaScript.</p>
+        </div>
+        <img class="dev-img" src="../Images/Ft-PfGoogle1.png">
+    </footer>
+</body>
+
+<script src="https://kit.fontawesome.com/6fbc2ca5fd.js" crossorigin="anonymous"></script>
+<script defer src="../Scripts/ps-Script.js"></script>
 
 </html>
